@@ -8,7 +8,7 @@ export default class extends Component {
   static async getInitialProps() {
     // Make request for posts.
     const response = await axios.get(
-      "https://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts"
+      "https://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?_fields=title,slug,excerpt"
     );
 
     // Return response to posts object in props.
