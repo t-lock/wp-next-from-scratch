@@ -12,7 +12,7 @@ export default class extends Component {
 
     // Make request for posts.
     const response = await axios.get(
-      `http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?slug=${slug}`
+      `https://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?slug=${slug}`
     );
 
     // Return our only item in array from response to posts object in props.
