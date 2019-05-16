@@ -14,6 +14,6 @@ export default () => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <h1>Your new server-side rendered React.js app!</h1>
+    <h1>WP Next</h1>
   </Fragment>
 );

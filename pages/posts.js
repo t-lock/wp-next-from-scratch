@@ -26,7 +26,7 @@ export default class extends Component {
         <div style={{ padding: 20, background: "mediumorchid" }}>
           <h2>{serverRendered ? "Server-rendered" : "Client-rendered"}</h2>
         </div>
-        <h1>Our Posts Page!</h1>
+        <h1>Posts from Wordpress</h1>
         <ul>
           {posts.map(post => {
             return (

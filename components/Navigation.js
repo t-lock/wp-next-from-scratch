@@ -12,5 +12,11 @@ export default () => (
         <a href="/posts">Posts</a>
       </Link>
     </li>
+    <li>
+      Data served from{" "}
+      <a target="_blank" href="https://wp-next-demo.armyofbees.net/">
+        https://wp-next-demo.armyofbees.net/
+      </a>
+    </li>
   </ul>
 );
