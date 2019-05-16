@@ -46,11 +46,19 @@ export default class extends Component {
                 />
                 <h3>
                   <span>Render me on the </span>
-                  <Link prefetch href={`/posts/${post.slug}`}>
+                  <Link
+                    prefetch
+                    href={`/single?slug=${post.slug}`}
+                    as={`/posts/${post.slug}`}
+                  >
                     <a style={{ color: "mediumorchid" }}>server</a>
                   </Link>
                   <span> or the </span>
-                  <Link prefetch href={`/posts-on-client/${post.slug}`}>
+                  <Link
+                    prefetch
+                    href={`/single-client?slug=${post.slug}`}
+                    as={`/posts-on-client/${post.slug}`}
+                  >
                     <a style={{ color: "dodgerblue" }}>client</a>
                   </Link>
                 </h3>

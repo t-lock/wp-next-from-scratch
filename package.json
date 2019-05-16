@@ -2,9 +2,10 @@
   "name": "wp-next",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_PATH=. NODE_ENV=production node server.js"
+    "start": "next start",
+    "now-build": "next build"
   },
   "dependencies": {
     "axios": "^0.18.0",
