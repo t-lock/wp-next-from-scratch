@@ -8,25 +8,27 @@ export default class extends Component {
   static async getInitialProps() {
     // Make request for posts.
     const response = await axios.get(
-      "http://wp-next-from-scratch.local/wp-json/wp/v2/posts"
+      "http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts"
     );
 
     // Return response to posts object in props.
     return {
-      posts: response.data
+      posts: response.data,
+      serverRendered: true
     };
   }
 
   render() {
+    const { posts, serverRendered } = this.props;
     return (
       <Fragment>
         <Navigation />
         <div style={{ padding: 20, background: "mediumorchid" }}>
-          <h2>SERVER RENDERED</h2>
+          <h2>{serverRendered ? "Server-rendered" : "Client-rendered"}</h2>
         </div>
         <h1>Our Posts Page!</h1>
         <ul>
-          {this.props.posts.map(post => {
+          {posts.map(post => {
             return (
               <li
                 key={post.id}

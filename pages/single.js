@@ -12,7 +12,7 @@ export default class extends Component {
 
     // Make request for posts.
     const response = await axios.get(
-      `http://wp-next-from-scratch.local/wp-json/wp/v2/posts?slug=${slug}`
+      `http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?slug=${slug}`
     );
 
     // Return our only item in array from response to posts object in props.
@@ -27,7 +27,7 @@ export default class extends Component {
       <Fragment>
         <Navigation />
         <div style={{ padding: 20, background: "mediumorchid" }}>
-          <h2>SERVER RENDERED</h2>
+          <h2>Server-rendered</h2>
         </div>
         <h1>{post.title.rendered}</h1>
         <article

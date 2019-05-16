@@ -1,12 +1,17 @@
 # Posts
-GET http://wp-next-from-scratch.local/wp-json/wp/v2/posts
+GET http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts
 
 ###
 
 # Posts -- titles & slug only, see https://core.trac.wordpress.org/changeset/41744
-GET http://wp-next-from-scratch.local/wp-json/wp/v2/posts?_fields=title,slug
+GET http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?_fields=title,slug
 
 ###
 
 # Single Post
-GET http://wp-next-from-scratch.local/wp-json/wp/v2/posts?slug=hello-world
+GET http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?slug=hello-world
+
+###
+
+# HTTP AUTH
+http://hiveflex:buzz123123@hive-flex.armyofbees.net/wp-json/wp/v2/posts

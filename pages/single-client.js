@@ -17,7 +17,7 @@ export default class extends Component {
   async componentDidMount() {
     // Make request for posts.
     const response = await axios.get(
-      `http://wp-next-from-scratch.local/wp-json/wp/v2/posts?slug=${
+      `http://wp-next-demo.armyofbees.net/wp-json/wp/v2/posts?slug=${
         this.props.slug
       }`
     );
